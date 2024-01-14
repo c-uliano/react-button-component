@@ -12,3 +12,6 @@ In this case, building a reusable button component with lots of customization, i
 - border raidus
 - disabled
 - onClick function
+
+### Things to Remember
+- if using sass don't forget to install it, `npm i sass`
