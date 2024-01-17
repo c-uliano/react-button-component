@@ -1,5 +1,7 @@
 import React from 'react';
 import styles from './Button.module.scss';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { IconName } from '@fortawesome/fontawesome-svg-core';
 
 export interface ButtonProps {
     text: string;
@@ -11,6 +13,7 @@ export interface ButtonProps {
     disabled?: boolean;
     href?: string;
     onClick?: (e:MouseEvent) => void;
+    icon?: IconName;
 }
 
 const Button = (props: ButtonProps) => {
@@ -31,7 +34,8 @@ const Button = (props: ButtonProps) => {
                 </a>
             ) : (
                 <button className={buttonObj} disabled={props.disabled}>
-                    {props.text}
+                    {props.icon && <FontAwesomeIcon icon={['fas', props.icon]} />}
+                    {props.text} 
                 </button>
             )}
         </>
