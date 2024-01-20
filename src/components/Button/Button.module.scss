@@ -1,3 +1,11 @@
+@import '/src/_colors';
+
 svg {
     margin-right: 4px;
+}
+
+button {
+    background-color: $warning;
+    color: white;
+    border: none;
 }
