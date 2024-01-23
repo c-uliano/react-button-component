@@ -1,18 +1,19 @@
 @import '/src/_colors';
+// @import ".../_colors";
 
 .button {
     padding: 4px 8px; // TODO: update this with variables from the sizes below, when I get that far
     cursor: pointer;
     border-radius: var(--btn-radius);
     color: var(--btn-color);
-    border: 1px solid var(--btn-border);
+    border: var(--btn-border_width) solid var(--btn-border);
     background: var(--btn-background);
     transition: .25s ease;
     font-size: 1em;
     // cursor: pointer;
 
     &:hover, &:active, &:focus {
-        background-color: $black-80;
+        background-color: var(--btn-bg_hover);
     }
 
     &[disabled] {
@@ -20,6 +21,9 @@
         opacity: .5;
     }
 
+    &.uppercase {
+        text-transform: uppercase;
+    }
     
     &.success {
         background-color: $success;
@@ -27,16 +31,23 @@
     }
 
     &.text {
-        
+        --btn-background: transparent;
+        --btn-border: transparent;
+        --btn-color: pink;
+        --btn-border_width: 0px;
+
+        &:hover, &:active, &:focus {
+            --btn-bg_hover: orange;
+        }
     }
     
     &.contained {
         --btn-background: black;
         --btn-border: black;
         --btn-color: white;
-        background-color: black;
-        border: 2px solid black;
-        color: white;
+        // background-color: black;
+        // border: 2px solid black;
+        // color: white;
         
         &:hover, &:active, &:focus {
             background-color: $black-80;
@@ -45,15 +56,19 @@
     
     &.outlined {
         border: 2px solid black;
+
+        &:hover, &:active, &:focus {
+            
+        }
     }
     
     &.warning {
         background-color: $warning;
         border-color: $warning;
-    }
 
-    &.uppercase {
-        text-transform: uppercase;
+        &:hover, &:active, &:focus {
+            
+        }
     }
 
     &.br-slight {
@@ -83,7 +98,7 @@
         padding: 8px 16px;
     }
 
-    svg {
+     svg {
         margin-right: 4px;
     }
 }

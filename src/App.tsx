@@ -17,7 +17,7 @@ function App() {
             <h1>Homepage</h1>
             <h2>Button component testing</h2>
             <div  style={{display: 'flex'}}>
-                <div style={{margin: '0 5px'}}><Button text="First Button" icon={['fas', 'camera-retro']} /></div>
+                <div style={{margin: '0 5px'}}><Button variant='text' text="First Button" icon={['fas', 'camera-retro']} /></div>
                 <div style={{margin: '0 5px'}}><Button text="Second Button" icon={['far', 'envelope']} /></div>
                 <div style={{margin: '0 5px'}}><Button text="Link Button" href={'#'} /></div>
             </div>
