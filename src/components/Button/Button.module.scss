@@ -1,5 +1,5 @@
-@import '/src/_colors';
-// @import ".../_colors";
+// @import '/src/_colors';
+@import '../../colors';
 
 .button {
     padding: 4px 8px; // TODO: update this with variables from the sizes below, when I get that far
@@ -33,11 +33,11 @@
     &.text {
         --btn-background: transparent;
         --btn-border: transparent;
-        --btn-color: pink;
+        --btn-color: $black;
         --btn-border_width: 0px;
 
         &:hover, &:active, &:focus {
-            --btn-bg_hover: orange;
+            --btn-bg_hover: $black-90;
         }
     }
     

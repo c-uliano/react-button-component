@@ -1,1 +1,72 @@
-/*# sourceMappingURL=Button.module.css.map */
+.button {
+  padding: 4px 8px;
+  cursor: pointer;
+  border-radius: var(--btn-radius);
+  color: var(--btn-color);
+  border: var(--btn-border_width) solid var(--btn-border);
+  background: var(--btn-background);
+  transition: 0.25s ease;
+  font-size: 1em;
+}
+.button:hover, .button:active, .button:focus {
+  background-color: var(--btn-bg_hover);
+}
+.button[disabled] {
+  pointer-events: none;
+  opacity: 0.5;
+}
+.button.uppercase {
+  text-transform: uppercase;
+}
+.button.success {
+  background-color: hsl(130, 100%, 50%);
+  border-color: hsl(130, 100%, 50%);
+}
+.button.text {
+  --btn-background: transparent;
+  --btn-border: transparent;
+  --btn-color: $black;
+  --btn-border_width: 0px;
+}
+.button.text:hover, .button.text:active, .button.text:focus {
+  --btn-bg_hover: $black-90;
+}
+.button.contained {
+  --btn-background: black;
+  --btn-border: black;
+  --btn-color: white;
+}
+.button.contained:hover, .button.contained:active, .button.contained:focus {
+  background-color: hsl(0, 0%, 80%);
+}
+.button.outlined {
+  border: 2px solid black;
+}
+.button.warning {
+  background-color: hsl(0, 100%, 50%);
+  border-color: hsl(0, 100%, 50%);
+}
+.button.br-slight {
+  --btn-radius: .125em;
+}
+.button.br-curved {
+  --btn-radius: .5em;
+}
+.button.br-round {
+  --btn-radius: 10em;
+}
+.button.sm {
+  font-size: 0.8em;
+  padding: 2px 4px;
+}
+.button.md {
+  font-size: 1em;
+  padding: 4px 8px;
+}
+.button.lg {
+  font-size: 1.5em;
+  padding: 8px 16px;
+}
+.button svg {
+  margin-right: 4px;
+}/*# sourceMappingURL=Button.module.css.map */
