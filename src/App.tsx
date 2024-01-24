@@ -14,8 +14,23 @@ function App() {
 
     return (
         <>
-            <h1>Homepage</h1>
-            <h2>Button component testing</h2>
+            <div className='container'>
+                <div className='row'>
+                    <div className='col'>
+                        <p>testing</p>
+                    </div>
+                    <div className='col'>
+                        <p>testing</p>
+                    </div>
+                </div>
+            </div>
+            <h1>React Button Component</h1>
+            <h2>Button Variants</h2>
+            <h2>Border Radius</h2>
+            <h2>Icon Usage & Placement</h2>
+            <h2>Additional Style Utilities</h2>
+            <h3>Uppercase Text</h3>
+            <h3>Disabled</h3>
             <div  style={{display: 'flex'}}>
                 <div style={{margin: '0 5px'}}><Button variant='text' text="First Button" icon={['fas', 'camera-retro']} /></div>
                 <div style={{margin: '0 5px'}}><Button text="Second Button" icon={['far', 'envelope']} /></div>
