@@ -16,6 +16,7 @@ In this case, building a reusable button component with lots of customization, i
 
 ### Things to Remember
 - if using sass don't forget to install it, `npm i sass`
+  - and then don't forget to compile it or use the extension Live Sass Compiler 
 
 ### Installing and using FontAwesome
 Learned some things about installing and using FontAwesome for a front-end application, details to follow
