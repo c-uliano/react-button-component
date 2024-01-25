@@ -1,4 +1,5 @@
-@import '../../colors';
+// @import '../../colors';
+@import '../../_colors.scss';
 
 .button {
     padding: 4px 8px; // TODO: update this with variables from the sizes below, when I get that far
@@ -25,36 +26,35 @@
     }
     
     &.success {
-        background-color: $success;
-        border-color: $success;
+        background-color: #{$success};
+        border-color: #{$success};
     }
 
     &.text {
         --btn-background: transparent;
         --btn-border: transparent;
-        --btn-color: $black;
+        --btn-color: #{$white};
         --btn-border_width: 0px;
 
         &:hover, &:active, &:focus {
-            --btn-bg_hover: $black-90;
+            --btn-bg_hover: #{$black-10};
         }
     }
     
     &.contained {
-        --btn-background: black;
-        --btn-border: black;
-        --btn-color: white;
-        // background-color: black;
-        // border: 2px solid black;
-        // color: white;
+        --btn-background: ;
+        --btn-border: ;
+        --btn-color: ;
         
         &:hover, &:active, &:focus {
-            background-color: $black-80;
+            background: #{$black-80};
         }
     }
     
     &.outlined {
-        border: 2px solid black;
+        --btn-background: ;
+        --btn-border: ;
+        --btn-color: ;
 
         &:hover, &:active, &:focus {
             

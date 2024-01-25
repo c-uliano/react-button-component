@@ -1,7 +1,6 @@
-import React from 'react';
 import styles from './Button.module.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { IconName, IconProp } from '@fortawesome/fontawesome-svg-core';
+import { IconProp } from '@fortawesome/fontawesome-svg-core';
 
 export interface ButtonProps {
     text: string;

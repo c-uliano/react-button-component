@@ -1,4 +1,4 @@
-import './App.css';
+import './App.scss';
 import 'bootstrap/dist/css/bootstrap-grid.min.css';
 
 import { library } from '@fortawesome/fontawesome-svg-core';
@@ -14,15 +14,13 @@ import Button from './components/Button/Button';
 function App() {
 
     return (
-        <>
-            <div className='container'>
-                <div className='row'>
-                    <div className='col'>
-                        <p>testing</p>
-                    </div>
-                    <div className='col'>
-                        <p>testing</p>
-                    </div>
+        <div className='container'>
+            <div className='row'>
+                <div className='col'>
+                    <p>testing</p>
+                </div>
+                <div className='col'>
+                    <p>testing</p>
                 </div>
             </div>
             <h1>React Button Component</h1>
@@ -37,7 +35,7 @@ function App() {
                 <div style={{margin: '0 5px'}}><Button text="Second Button" icon={['far', 'envelope']} /></div>
                 <div style={{margin: '0 5px'}}><Button text="Link Button" href={'#'} /></div>
             </div>
-        </>
+        </div>
     )
 }
 

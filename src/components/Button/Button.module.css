@@ -25,22 +25,24 @@
 .button.text {
   --btn-background: transparent;
   --btn-border: transparent;
-  --btn-color: $black;
+  --btn-color: hsl(0, 0%, 100%);
   --btn-border_width: 0px;
 }
 .button.text:hover, .button.text:active, .button.text:focus {
-  --btn-bg_hover: $black-90;
+  --btn-bg_hover: hsl(0, 0%, 10%);
 }
 .button.contained {
-  --btn-background: black;
-  --btn-border: black;
-  --btn-color: white;
+  --btn-background: ;
+  --btn-border: ;
+  --btn-color: ;
 }
 .button.contained:hover, .button.contained:active, .button.contained:focus {
-  background-color: hsl(0, 0%, 80%);
+  background: hsl(0, 0%, 80%);
 }
 .button.outlined {
-  border: 2px solid black;
+  --btn-background: ;
+  --btn-border: ;
+  --btn-color: ;
 }
 .button.warning {
   background-color: hsl(0, 100%, 50%);
