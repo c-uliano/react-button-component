@@ -10,7 +10,6 @@
     background: var(--btn-background);
     transition: .25s ease;
     font-size: 1em;
-    // cursor: pointer;
 
     &:hover, &:active, &:focus {
         background-color: var(--btn-bg_hover);
@@ -36,8 +35,16 @@
         --btn-color: #{$white};
         --btn-border_width: 0px;
 
+        @media (prefers-color-scheme: light) {
+            --btn-color: #{$black};
+        }
+
         &:hover, &:active, &:focus {
             --btn-bg_hover: #{$black-10};
+
+            @media (prefers-color-scheme: light) {
+                --btn-bg_hover: #{$black-90};
+            }
         }
     }
     
