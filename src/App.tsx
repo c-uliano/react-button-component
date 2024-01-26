@@ -15,14 +15,14 @@ function App() {
 
     return (
         <div className='container'>
-            <div className='row'>
+            {/* <div className='row'>
                 <div className='col'>
                     <p>testing</p>
                 </div>
                 <div className='col'>
                     <p>testing</p>
                 </div>
-            </div>
+            </div> */}
             <h1>React Button Component</h1>
             <h2>Button Variants</h2>
             <h2>Border Radius</h2>
@@ -31,8 +31,8 @@ function App() {
             <h3>Uppercase Text</h3>
             <h3>Disabled</h3>
             <div  style={{display: 'flex'}}>
-                <div style={{margin: '0 5px'}}><Button variant='text' text="First Button" icon={['fas', 'camera-retro']} /></div>
-                <div style={{margin: '0 5px'}}><Button text="Second Button" icon={['far', 'envelope']} /></div>
+                <div style={{margin: '0 5px'}}><Button variant='text' color='success' text="First Button" icon={['fas', 'camera-retro']} /></div>
+                <div style={{margin: '0 5px'}}><Button text="Second Button" variant='contained' icon={['far', 'envelope']} /></div>
                 <div style={{margin: '0 5px'}}><Button text="Link Button" href={'#'} /></div>
             </div>
         </div>

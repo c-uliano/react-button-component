@@ -22,14 +22,28 @@
   background-color: hsl(130, 100%, 50%);
   border-color: hsl(130, 100%, 50%);
 }
+.button.warning {
+  background-color: hsl(0, 100%, 50%);
+  border-color: hsl(0, 100%, 50%);
+}
 .button.text {
   --btn-background: transparent;
   --btn-border: transparent;
   --btn-color: hsl(0, 0%, 100%);
   --btn-border_width: 0px;
 }
+@media (prefers-color-scheme: light) {
+  .button.text {
+    --btn-color: hsl(0, 0%, 0%);
+  }
+}
 .button.text:hover, .button.text:active, .button.text:focus {
   --btn-bg_hover: hsl(0, 0%, 10%);
+}
+@media (prefers-color-scheme: light) {
+  .button.text:hover, .button.text:active, .button.text:focus {
+    --btn-bg_hover: hsl(0, 0%, 90%);
+  }
 }
 .button.contained {
   --btn-background: ;
@@ -43,10 +57,6 @@
   --btn-background: ;
   --btn-border: ;
   --btn-color: ;
-}
-.button.warning {
-  background-color: hsl(0, 100%, 50%);
-  border-color: hsl(0, 100%, 50%);
 }
 .button.br-slight {
   --btn-radius: .125em;
