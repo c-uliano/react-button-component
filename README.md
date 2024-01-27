@@ -37,6 +37,7 @@ npm i --save @fortawesome/react-fontawesome@latest
 ```
 4) 
 ```typescript
+// in App file
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fab } from '@fortawesome/free-brands-svg-icons';
 import { fas } from '@fortawesome/free-solid-svg-icons';
@@ -47,7 +48,7 @@ library.add(fas, fab, far);
 ```
 5) 
 ```typescript
-// in App file
+// in Button component
 // the import
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { IconProp } from '@fortawesome/fontawesome-svg-core';
