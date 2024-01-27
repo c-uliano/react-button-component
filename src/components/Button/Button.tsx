@@ -13,6 +13,8 @@ export interface ButtonProps {
     href?: string;
     onClick?: (e:MouseEvent) => void;
     icon?: IconProp;
+    targetBlank?: boolean; // TODO: if this is true use Link instead of anchor
+    // TODO: install react-router-dom
 }
 
 const Button = (props: ButtonProps) => {
